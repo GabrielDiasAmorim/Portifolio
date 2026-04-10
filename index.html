@@ -1,143 +1,93 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriel Dias Amorim | Portfólio</title>
 
-/*
-  PORTFÓLIO PROFISSIONAL - Gabriel Dias Amorim
-  Objetivo: Página de apresentação para freelas (Workana)
-*/
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
 
-export default function Portfolio() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white flex items-center justify-center p-6">
-      
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="w-full max-w-4xl"
-      >
-        
-        <Card className="rounded-2xl shadow-2xl bg-white/10 backdrop-blur-md border border-white/10">
-          <CardContent className="p-10">
-            
-            {/* HEADER */}
-            <div className="text-center space-y-4">
-              
-              {/* AVATAR */}
-              <div className="flex justify-center">
-                <div className="w-28 h-28 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-3xl font-bold overflow-hidden text-white shadow-lg">
-                  {/*
-                    🔥 FUTURO: coloque sua imagem aqui
-                    <img src="/sua-foto.jpg" className="w-full h-full object-cover" />
-                  */}
-                  GD
-                </div>
-              </div>
+<body>
 
-              {/* NOME */}
-              <h1 className="text-5xl font-extrabold tracking-tight text-white drop-shadow-lg">
-                Gabriel Dias Amorim
-              </h1>
+  <div class="container">
 
-              <p className="text-gray-200 text-lg">
-                Desenvolvedor iniciante focado em criação de sites modernos e responsivos
-              </p>
-            </div>
-
-            {/* ABOUT */}
-            <div className="mt-10 grid gap-8">
-
-              <section>
-                <h2 className="text-2xl font-semibold text-white mb-2">
-                  Sobre mim
-                </h2>
-                <p className="text-gray-200 leading-relaxed">
-                  Estou começando na área de desenvolvimento web e atualmente estudo HTML, CSS e JavaScript.
-                  Tenho como objetivo atuar como freelancer criando sites modernos, rápidos e responsivos.
-                </p>
-              </section>
-
-              {/* SERVICES */}
-              <section>
-                <h2 className="text-2xl font-semibold text-white mb-2">
-                  O que eu faço
-                </h2>
-                <ul className="text-gray-200 list-disc list-inside space-y-1">
-                  <li>Criação de sites institucionais</li>
-                  <li>Landing pages modernas</li>
-                  <li>Sites responsivos (mobile first)</li>
-                  <li>Interfaces web simples e rápidas</li>
-                </ul>
-              </section>
-
-              {/* SKILLS COM CORES */}
-              <section>
-                <h2 className="text-2xl font-semibold text-white mb-2">
-                  Habilidades
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 rounded-full text-sm bg-orange-500 text-white font-medium shadow">
-                    HTML
-                  </span>
-                  <span className="px-3 py-1 rounded-full text-sm bg-blue-500 text-white font-medium shadow">
-                    CSS
-                  </span>
-                  <span className="px-3 py-1 rounded-full text-sm bg-yellow-400 text-black font-medium shadow">
-                    JavaScript básico
-                  </span>
-                  <span className="px-3 py-1 rounded-full text-sm bg-gray-600 text-white font-medium shadow">
-                    Git (iniciante)
-                  </span>
-                </div>
-              </section>
-
-              {/* PROJECTS */}
-              <section>
-                <h2 className="text-2xl font-semibold text-white mb-2">
-                  Projetos
-                </h2>
-                <p className="text-gray-400 mb-3">
-                  Ainda não tenho projetos reais, mas estou desenvolvendo meus primeiros trabalhos.
-                </p>
-
-                <div className="border border-white/10 rounded-xl p-4 text-gray-300">
-                  Em breve: projetos reais publicados aqui 🚀
-                </div>
-              </section>
-
-              {/* CONTACT */}
-              <section>
-                <h2 className="text-2xl font-semibold text-white mb-2">
-                  Contato
-                </h2>
-
-                <div className="flex flex-col gap-3 text-gray-200">
-                  <a href="mailto:gd4710362@gmail.com" className="hover:text-white">
-                    📧 Email: gd4710362@gmail.com
-                  </a>
-
-                  <a href="https://wa.me/5588981747185" target="_blank" className="hover:text-white">
-                    📱 WhatsApp: +55 (88) 98174-7185
-                  </a>
-
-                  <a href="https://github.com/GabrielDiasAmorim" target="_blank" className="hover:text-white">
-                    💻 GitHub
-                  </a>
-                </div>
-              </section>
-
-              {/* BUTTON */}
-              <div className="text-center mt-8">
-                <Button className="px-8 py-3 rounded-xl text-white bg-indigo-600 hover:bg-indigo-500">
-                  Baixar currículo
-                </Button>
-              </div>
-
-            </div>
-          </CardContent>
-        </Card>
-      </motion.div>
+    <!-- AVATAR -->
+    <div class="avatar">
+      <!-- FUTURO: colocar imagem aqui
+      <img src="sua-foto.jpg" alt="Foto de perfil">
+      -->
+      GD
     </div>
-  );
-}
+
+    <!-- NOME -->
+    <h1>Gabriel Dias Amorim</h1>
+
+    <p class="subtitle">
+      Desenvolvedor iniciante focado em criação de sites modernos
+    </p>
+
+    <!-- SOBRE -->
+    <section>
+      <h2>Sobre mim</h2>
+      <p>
+        Estou começando na área de desenvolvimento web e estudo HTML, CSS e JavaScript.
+        Quero atuar como freelancer criando sites modernos e responsivos.
+      </p>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section>
+      <h2>O que eu faço</h2>
+      <ul>
+        <li>Sites institucionais</li>
+        <li>Landing pages</li>
+        <li>Sites responsivos</li>
+        <li>Interfaces web simples</li>
+      </ul>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section>
+      <h2>Habilidades</h2>
+
+      <div class="skills">
+        <span class="html">HTML</span>
+        <span class="css">CSS</span>
+        <span class="js">JavaScript</span>
+        <span class="git">Git</span>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section>
+      <h2>Contato</h2>
+
+      <p>Email: <a href="mailto:gd4710362@gmail.com">gd4710362@gmail.com</a></p>
+
+      <p>
+        WhatsApp:
+        <a href="https://wa.me/5588981747185" target="_blank">
+          +55 (88) 98174-7185
+        </a>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/GabrielDiasAmorim" target="_blank">
+          Meu GitHub
+        </a>
+      </p>
+    </section>
+
+    <!-- BOTÃO -->
+    <button onclick="baixarCV()">Baixar currículo</button>
+
+  </div>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+
+</body>
+</html>
