@@ -29,7 +29,7 @@ O objetivo deste portfólio é:
 
 - HTML5  
 - CSS3  
-
+- IA
 ---
 
 ## 📞 Contato
